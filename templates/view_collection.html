@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/view_movie.css') }}">
+</head>
+<body>
+<div id="view_movies" align="center">
+    <table>
+        <tr>
+            <form>
+                <table border="2" align="center">
+  <thead>
+  <td>User Name</td>
+  <td>Movie Name</td>
+  <td>Ticket cost</td>
+
+  </thead>
+  {% for x in rows %}
+  <tr>
+      <td>{{x["Username"]}}</td>
+      <td>{{x["Movie_name"]}}</td>
+      <td>{{x["Ticket_cost"]}}</td>
+      <td><a href="/deldet/?name={{ x['Username'] }}"><button type="button" ><b>Delete</b></button></a></td>
+  </tr>
+
+  {% endfor %}
+</table>
+                <br>
+            </form>
+            <form action="/go_back"><button>Go Back</button></form>
+</div>
+
+</body>
+</html>

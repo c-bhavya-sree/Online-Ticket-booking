@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Theater Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+<div name="image">
+    <img name="image" src="static/image/movie_adda.png">
+</div>
+
+<div name="theater_register">
+<form action="/register_theater" method="POST">
+    <table>
+        <tr>
+            <td>Owner Name</td>
+            <td><input type="text" name="owner_name"></td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+            <td>Passsword</td>
+            <td><input type="text" name="theater_password"></td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+            <td>Theater Name</td>
+            <td><input type="text" name="theater_name"></td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+            <td>Place</td>
+            <td><input type="text" name="place"></td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+            <td>Timing</td>
+            <td><input type="text" name="timing"></td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+            <td>Food Availability</td>
+            <td>
+                <input type="radio" name="food" value="Yes">Yes
+                <input type="radio" name="food" value="No">No
+            </td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+            <td>Number of Screen</td>
+            <td><input type="number" name="number_of_screen"></td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+            <td colspan="2" align="center"><button>Register</button></td>
+        </tr>
+    </table>
+</form>
+</div>
+
+</body>
+</html>

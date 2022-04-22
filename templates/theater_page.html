@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Theater</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<div name="header" style="border-radius:30px;">
+    <img src="/static/image/movie/{{image}}" width="150px" style="margin-left:500px;">
+        <h1 style="padding-left:750px;margin-top:-100px;padding-bottom:40px; color:red; font-size:50px;">{{moviename}}</h1>
+    </div>
+    {% for x in rows %}
+
+    <table align="center" style="background:radial-gradient(circle, lightblue, pink); padding-right:100px;padding-left:100px;">
+    <tr><td><br></td></tr>
+        <tr>
+        <td  align="center">{{x['Theater_Name']}} <br> {{x['Place']}} </td>
+        <td></td>
+        <td><a href="/seat_page/?theater={{x['Theater_Name']}}"><button type="button" ><b>{{x['Timing']}}</b></button></a></td>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>

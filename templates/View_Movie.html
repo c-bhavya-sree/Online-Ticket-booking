@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/view_movie.css') }}">
+</head>
+<body>
+<div id="view_movies" align="center">
+    <table>
+        <tr>
+            <form>
+                <table border="2" align="center">
+  <thead>
+  <td>Movie Name</td>
+  <td>Theater Name</td>
+  <td>Description</td>
+  <td>Duration</td>
+  <td>Release Date</td>
+  <td>Ratings</td>
+  <td>Languages Available</td>
+  <td>Genre</td>
+  <td>Ticket cost</td>
+  <td>Trailer</td>
+  <td>Image</td>
+
+  </thead>
+  {% for x in rows %}
+  <tr>
+      <td>{{x["Movie_Name"]}}</td>
+      <td>{{x["Theater_Name"]}}</td>
+      <td>{{x["Description"]}}</td>
+      <td>{{x["Duration"]}}</td>
+      <td>{{x["Release_Date"]}}</td>
+      <td>{{x["Ratings"]}}</td>
+      <td>{{x["Languages_available"]}}</td>
+      <td>{{x["Genre"]}}</td>
+      <td>{{x["Ticket_cost"]}}</td>
+      <td>{{x["Trailer"]}}</td>
+      <td><img src="/static/image/movie/{{x['Image']}}" width="100px"></td>
+      <td><a href="/delMov/?movie={{ x['Movie_Name'] }}"><button type="button" ><b>Delete</b></button></a></td>
+      <td><a href="/updMov/?movie={{ x['Movie_Name'] }}"><button type="button" ><b>Update</b></button></a></td>
+  </tr>
+
+  {% endfor %}
+</table>
+                <br>
+            </form>
+            <form action="/go_back"><button>Go Back</button></form>
+</div>
+
+</body>
+</html>

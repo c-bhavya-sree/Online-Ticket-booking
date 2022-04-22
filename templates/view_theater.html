@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Theaters</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/view_movie.css') }}">
+</head>
+<body>
+
+<div id="view_theater" align="center">
+    <table>
+        <tr>
+            <form>
+                <table border="2" align="center">
+  <thead>
+  <td>ID</td>
+  <td>Owner Name</td>
+  <td>Password</td>
+  <td>Theater_Name</td>
+  <td>Place</td>
+  <td>Timing</td>
+  <td>Food</td>
+  <td>Number of Screen</td>
+
+  </thead>
+  {% for x in rows %}
+  <tr>
+      <td>{{x["ID"]}}</td>
+      <td>{{x["Owner_Name"]}}</td>
+      <td>{{x["Password"]}}</td>
+      <td>{{x["Theater_Name"]}}</td>
+      <td>{{x["Place"]}}</td>
+      <td>{{x["Timing"]}}</td>
+      <td>{{x["Food"]}}</td>
+      <td>{{x["Number_Of_Screen"]}}</td>
+      <td><a href="/delthe/?id={{ x['ID'] }}"><button type="button" ><b>Delete</b></button></a></td>
+  </tr>
+  {% endfor %}
+
+
+</table>
+            </form>
+        </tr>
+
+    </table>
+    <br>
+    <form action="/go_back"><button>Go Back</button></form>
+</div>
+
+</body>
+</html>

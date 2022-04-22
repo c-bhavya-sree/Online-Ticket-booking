@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+<div name="image">
+    <img name="image" src="static/image/movie_adda.png">
+</div>
+
+<div name="userregister">
+    <form action="/user_registered" method="POST">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="user_name" required></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" name="user_password"></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>Mobile</td>
+                <td><input type="number" name="user_mobile"></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" value="Male" required>Male
+                <input type="radio" name="gender" value="Female" required>Female</td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="user_mail" required></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" name="user_dob" required></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>Place</td>
+                <td><input type="text" name="user_place" required></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td colspan="2" align="center"><button>Sign up</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

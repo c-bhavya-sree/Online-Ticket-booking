@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<div name="header">
+  <table>
+    <tr>
+      <td><img name="logo" src="static/image/movie_adda.png"></td>
+      <td>
+          <select name="adminname" onchange ="if (this.value)window.location.href=alert('you have been loged out')">
+              <option hidden>Hello Admin</option>
+              <option name="logout">Log out</option>
+          </select>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div name="left_dashboard" align="center">
+    <table>
+        <tr>
+           <form action="add_movie_btn">
+                <td><button> Add Movie</button></td>
+           </form>
+        </tr>
+
+        <tr>
+           <form action="/view_movie">
+                <td><button>View Movie</button></td>
+           </form>
+        </tr>
+        <tr>
+            <form action="/view_theater">
+                <td><button >View Theater</button></td>
+            </form>
+        </tr>
+        <tr>
+            <form action="/view_collection">
+                <td><button >View Total Collection</button></td>
+            </form>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

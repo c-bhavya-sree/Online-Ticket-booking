@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+<div name="image">
+    <img name="image" src="static/image/movie_adda.png">
+</div>
+
+<div name="userlogin">
+    <form action="/check_user" method="POST">
+        <table>
+            <tr>
+                <td>User E-mail</td>
+                <td><input type="email" name="user_email" required></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="user_password" required></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td><a href="/user_register">New, Register here</a></td>
+                <td align="center"><button>Sign in</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

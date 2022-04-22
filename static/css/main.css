@@ -1,0 +1,520 @@
+img[name=logo]
+{
+    border-radius:100%;
+    width:100px
+}
+
+div[name=header]
+{
+    background-color:rgb(51, 53, 69)
+}
+
+button
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 68, 100);
+    font-size: 15px;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    border-radius: 100px;
+    border: 0p solid rgb(248, 68, 100);
+}
+
+button[name=user_sign_in]
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 68, 100);
+    font-size: 15px;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    border-radius: 100px;
+    border: 0p solid rgb(248, 68, 100);
+    margin-right: 10px;
+    margin-left:400px;
+    margin-bottom:6px;
+}
+
+button[name=admin_sign_in]
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 68, 100);
+    font-size: 15px;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    border-radius: 100px;
+    border: 0p solid rgb(248, 68, 100);
+    margin-right: 10px;
+    margin-left:20px;
+    margin-bottom:6px;
+}
+
+button:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+input[name=search]
+{
+    padding: 10px;
+    margin-bottom:6px;
+    margin-left: 16px;
+    font-size: 17px;
+    width:500px;
+    border-radius: 100px;
+    border: 0p solid rgb(248, 68, 100);
+}
+
+body
+{
+    background:url(https://cdn.pastemagazine.com/www/articles/2021/06/08/best-movies-in-theaters-header.jpg);
+}
+
+div[name=image]
+{
+    float:left;
+    margin-top:70px;
+    margin-left:100px;
+}
+
+img[name=image]
+{
+    border-radius:100%;
+}
+
+div[name=userlogin]
+{
+    background:radial-gradient(circle, lightblue, pink);
+    float:right;
+    margin-top:200px;
+    margin-right:200px;
+    border-radius:50px;
+}
+
+div[name=userlogin] table
+{
+    margin-right:30px;
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+div[name=userlogin] input
+{
+    border-radius:50px;
+}
+
+div[name=userregister]
+{
+    background:radial-gradient(circle, lightblue, pink);
+    float:right;
+    margin-top:100px;
+    margin-right:200px;
+    border-radius:50px;
+}
+
+div[name=userregister] table
+{
+    margin-right:30px;
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+div[name=userregister] input
+{
+    border-radius:50px;
+}
+
+select[name=username]
+{
+    margin-left:450px;
+    padding: 10px;
+    background-color: rgb(248, 68, 100);
+    font-size: 15px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    border-radius: 100px;
+    border: 0p solid rgb(248, 68, 100);
+}
+
+div[name=adminlogin]
+{
+    background:radial-gradient(circle, lightblue, pink);
+    float:right;
+    margin-top:200px;
+    margin-right:150px;
+    border-radius:50px;
+}
+
+div[name=adminlogin] table
+{
+    margin-right:30px;
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+div[name=adminlogin] input
+{
+    border-radius:50px;
+}
+
+div[name=theater_register]
+{
+    background:radial-gradient(circle, lightblue, pink);
+    float:right;
+    margin-top:130px;
+    margin-right:200px;
+    border-radius:50px;
+}
+
+div[name=theater_register] table
+{
+    margin-right:30px;
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+div[id= add_movie] input
+{
+    border-radius:50px;
+}
+
+div[name=theater_register] input
+{
+    border-radius:50px;
+}
+
+select[name=adminname]
+{
+    margin-left:1000px;
+    padding: 10px;
+    background-color: rgb(248, 68, 100);
+    font-size: 15px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    border-radius: 100px;
+    border: 0p solid rgb(248, 68, 100);
+}
+
+div[name=left_dashboard]
+{
+    background-color:lightgreen;
+    margin-left:45%;
+    margin-right:55%;
+    margin-top  :100px;
+}
+
+div[id=view_theater]
+{
+    float:right;
+    margin-right:355px;
+    margin-top:200px;
+    background:radial-gradient(circle, lightblue, pink);
+}
+
+div[id=add_movie]
+{
+    float:right;
+    margin-right:500px;
+    margin-top:50px;
+    background:radial-gradient(circle, lightblue, pink);
+    border-radius:50px;
+}
+div[id=update_movie]
+{
+    float:right;
+    margin-right:500px;
+    margin-top:50px;
+    background:radial-gradient(circle, lightblue, pink);
+    border-radius:50px;
+}
+
+div[name=left_dashboard] button
+{
+    margin-right:1265px;
+    font-size: 15px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    border-radius: 100px;
+    border: 0p solid rgb(248, 68, 100);
+}
+
+div[id=add_movie] table
+{
+    margin-right:30px;
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+div[id=update_movie] table
+{
+    margin-right:-30px;
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+div[id=view_movies]
+{
+    float:right;
+    margin-right:300px;
+    margin-top:200px;
+    background:radial-gradient(circle, lightblue, pink);
+}
+
+div[id=delete_movie] table
+{
+    margin-right:30px;
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+div[id=delete_movie]
+{
+    display:none;
+    float:right;
+    margin-right:500px;
+    margin-top:-200px;
+    background:radial-gradient(circle, lightblue, pink);
+    border-radius:50px;
+}
+
+div[id=view_movies] button
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 68, 100);
+    font-size: 15px;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    border-radius: 100px;
+    border: 0p solid rgb(248, 68, 100);
+}
+
+
+.slideshow {box-sizing: border-box}
+.mySlides {display: none}
+.slideshow img {vertical-align: middle;width: 700px;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.row{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 20 0px 20px 20px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+-------------------------------------
+.list_movies {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.list_movies .main_card {
+	color: #fff;
+	width: 760px;
+	height: 390px;
+	margin: 50px auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	max-width: 770px;
+	background: #00C9FF;
+	background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);
+	background: -webkit-gradient(linear, left top, right top, from(#92FE9D), to(#00C9FF));
+	background: -webkit-linear-gradient(left, #92FE9D, #00C9FF);
+	background: -o-linear-gradient(left, #92FE9D, #00C9FF);
+	background: linear-gradient(to right, #92FE9D, #00C9FF);
+	-webkit-box-shadow: 0 0 40px rgba(0,0,0,0.3);
+	        box-shadow: 0 0 40px rgba(0,0,0,0.3);
+}
+
+.list_movies  .card_left {
+	width: 100%;
+}
+
+.list_movies  .card_datails {
+	width: 90%;
+	padding: 30px;
+	margin-top: -25px;
+}
+.list_movies   .card_datails  h1 {
+	font-size: 30px;
+}
+.list_movies  .card_right img {
+	height: 390px;
+	width:350px;
+	border-radius: 2px;
+}
+.list_movies  .card_right {
+	border-radius: 2px;
+}
+
+.list_movies  .card_cat {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.list_movies  .PG, .year, .genre, .time {
+	color: fff;
+	padding: 10px;
+	font-weight: bold;
+	border-radius: 15px;
+}
+
+.list_movies  .PG {
+	background: #92FE9D;
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.1);
+	        box-shadow: 0 0 50px rgba(0,0,0,0.1);
+	-webkit-transition: 300ms ease-in-out;
+}
+
+.list_movies  .disc {
+	font-weight: 100;
+	line-height: 27px;
+}
+.list_movies  a {
+	color: darkcyan;
+	display: block;
+	text-decoration: none;
+}
+.list_movies   .social-btn {
+	margin-left: 35px;
+}
+.list_movies   button {
+	color: #fff;
+	border: none;
+	padding: 0px;
+	outline: none;
+	font-size: 12px;
+	margin-top: 30px;
+	margin-left: 10px;
+	background: #92FE9D;
+	border-radius: 12px;
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	-webkit-transition: 300ms ease-in-out;
+	-o-transition: 200ms ease-in-out;
+	transition: 200ms ease-in-out;
+}
+
+.list_movies  button:hover {
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+}
+
+

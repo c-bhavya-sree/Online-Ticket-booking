@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+</head>
+<body>
+<div name="header">
+  <table>
+    <tr>
+      <td><img name="logo" src="static/image/movie_adda.png"></td>
+      <td><input placeholder="Search" name="search"></td>
+      <td>
+          <select name="username" onchange ="if (this.value)window.location.href=alert('you have been loged out')">
+              <option hidden>Hello {{username}}</option>
+              <option name="logout">Log out</option>
+          </select>
+      </td>
+    </tr>
+  </table>
+</div>
+<br><br>
+<div class="slideshow">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="/static/image/slideshow/kgf-chapter-2-to-get-postponed-001.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="/static/image/slideshow/maxresdefault.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="/static/image/slideshow/Pushpa.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+  <div class="list_movies">
+
+    <table>
+    {% for x in rows %}
+    <tr>
+    <div class="wrapper">
+	<div class="main_card">
+		<div class="card_left">
+			<div class="card_datails">
+				<h1>{{x["Movie_Name"]}}</h1>
+				<div class="card_cat">
+					<p class="PG">{{x["Ratings"]}}</p>
+					<p class="year">{{x["Release_Date"]}}</p>
+					<p class="genre">{{x["Genre"]}}</p>
+					<p class="time">{{x["Duration"]}}</p>
+				</div>
+				<p class="disc">{{x["Description"]}}</p>
+
+			<div class="social-btn">
+        <!-- WATCH TRAILER-->
+				<button ><a class="popup-youtube" href="{{x['trailer']}}">
+					TRAILER </a>
+				</button>
+				<!-- GET-->
+				<button><a href="/theater/?movie={{ x['Movie_Name'] }}">
+					BOOK
+					</a>
+				</button>
+				<!--USERS RATINGS-->
+				<button>
+					97%
+				</button>
+			</div>
+			</div>
+		</div>
+		<div class="card_right">
+			<div class="img_container">
+				<img src="/static/image/movie/{{x['Image']}}" width="300px">
+				</div>
+        </div>
+		</div>
+	</div>
+    </tr>
+    {% endfor %}
+</table>
+
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+$(function() {
+    $('.popup-youtube').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
+});
+</script>
+</body>
+</html>
