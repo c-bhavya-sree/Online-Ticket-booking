@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220422 13:58:52.180" rpa="false" schemaversion="3">
+<suite id="s1" name="Viewtrailer" source="C:\Users\VSCC PRASAD\PycharmProjects\RobotFramework\test\MovieAdda\Viewtrailer.robot">
+<test id="s1-t1" name="verify view trailer" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://127.0.0.1:5000/user_login?user_sign_in=</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220422 13:58:52.847" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5000/user_login?user_sign_in='.</msg>
+<status status="PASS" starttime="20220422 13:58:52.845" endtime="20220422 13:58:58.696"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220422 13:58:58.698" endtime="20220422 13:58:58.890"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='user_email']</arg>
+<arg>p@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220422 13:58:58.894" level="INFO">Typing text 'p@gmail.com' into text field '//input[@name='user_email']'.</msg>
+<status status="PASS" starttime="20220422 13:58:58.893" endtime="20220422 13:58:59.123"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//input[@name='user_password']</arg>
+<arg>asdf</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220422 13:58:59.125" level="INFO">Typing password into text field '//input[@name='user_password']'.</msg>
+<msg timestamp="20220422 13:58:59.206" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220422 13:58:59.285" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220422 13:58:59.124" endtime="20220422 13:58:59.286"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Sign in']</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220422 13:58:59.289" level="INFO">Sending key(s) ('[Return]',) to //button[normalize-space()='Sign in'] element.</msg>
+<msg timestamp="20220422 13:59:05.160" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20220422 13:58:59.287" endtime="20220422 13:59:05.213"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Xpath://html/body/div[2]/div[3]/div[1]/div/div[1]/div/div[2]/button[1]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220422 13:59:05.215" level="INFO">Clicking link 'Xpath://html/body/div[2]/div[3]/div[1]/div/div[1]/div/div[2]/button[1]/a'.</msg>
+<status status="PASS" starttime="20220422 13:59:05.214" endtime="20220422 13:59:05.515"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//button[normalize-space()='TRAILER ']</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220422 13:59:05.520" level="INFO">Sending key(s) ('[Return]',) to //button[normalize-space()='TRAILER '] element.</msg>
+<msg timestamp="20220422 13:59:14.341" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220422 13:59:14.343" level="FAIL">Element with locator '//button[normalize-space()='TRAILER ']' not found.</msg>
+<status status="FAIL" starttime="20220422 13:59:05.517" endtime="20220422 13:59:14.654"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220422 13:59:14.656" endtime="20220422 13:59:14.656"/>
+</kw>
+<status status="FAIL" starttime="20220422 13:58:52.843" endtime="20220422 13:59:14.658">Element with locator '//button[normalize-space()='TRAILER ']' not found.</status>
+</test>
+<status status="FAIL" starttime="20220422 13:58:52.184" endtime="20220422 13:59:14.662"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Viewtrailer">Viewtrailer</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

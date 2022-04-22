@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220422 02:18:15.670" rpa="false" schemaversion="3">
+<suite id="s1" name="viewMovieAdmin" source="C:\Users\VSCC PRASAD\PycharmProjects\RobotFramework\Test\MovieAdda\addMovie\viewMovieAdmin.robot">
+<test id="s1-t1" name="verify admin login and veiw movie" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://127.0.0.1:5000/admin_login?admin_sign_in=</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220422 02:18:15.919" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5000/admin_login?admin_sign_in='.</msg>
+<status status="PASS" starttime="20220422 02:18:15.918" endtime="20220422 02:18:21.303"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220422 02:18:21.304" endtime="20220422 02:18:21.429"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='user_name']</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220422 02:18:21.429" level="INFO">Typing text 'admin' into text field '//input[@name='user_name']'.</msg>
+<status status="PASS" starttime="20220422 02:18:21.429" endtime="20220422 02:18:21.548"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//input[@name='user_password']</arg>
+<arg>12345</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220422 02:18:21.550" level="INFO">Typing password into text field '//input[@name='user_password']'.</msg>
+<msg timestamp="20220422 02:18:21.593" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220422 02:18:21.633" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220422 02:18:21.549" endtime="20220422 02:18:21.633"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Sign in']</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220422 02:18:21.634" level="INFO">Sending key(s) ('[Return]',) to //button[normalize-space()='Sign in'] element.</msg>
+<msg timestamp="20220422 02:18:27.110" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20220422 02:18:21.634" endtime="20220422 02:18:27.123"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Add Movie']</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220422 02:18:27.125" level="INFO">Sending key(s) ('[Return]',) to //button[normalize-space()='Add Movie'] element.</msg>
+<msg timestamp="20220422 02:18:28.544" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20220422 02:18:27.124" endtime="20220422 02:18:28.565"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>Xpath://html/body/div/form/table/tbody/tr[4]/td[2]/textarea</arg>
+<arg>Jab We Met</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220422 02:18:28.566" level="INFO">Typing text 'Jab We Met' into text field 'Xpath://html/body/div/form/table/tbody/tr[4]/td[2]/textarea'.</msg>
+<status status="PASS" starttime="20220422 02:18:28.565" endtime="20220422 02:18:28.678"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>Xpath:/html/body/div/form/table/tbody/tr[8]/td[2]/input</arg>
+<arg>Jab We Met (English: When We Met) is a 2007 Indian romantic comedy film.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220422 02:18:28.679" level="INFO">Typing text 'Jab We Met (English: When We Met) is a 2007 Indian romantic comedy film.' into text field 'Xpath:/html/body/div/form/table/tbody/tr[8]/td[2]/input'.</msg>
+<status status="PASS" starttime="20220422 02:18:28.679" endtime="20220422 02:18:28.826"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='duration']</arg>
+<arg>2h48m</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220422 02:18:28.826" level="INFO">Typing text '2h48m' into text field '//input[@name='duration']'.</msg>
+<status status="PASS" starttime="20220422 02:18:28.826" endtime="20220422 02:18:28.880"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='rating']</arg>
+<arg>8.7</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220422 02:18:28.881" level="INFO">Typing text '8.7' into text field '//input[@name='rating']'.</msg>
+<status status="PASS" starttime="20220422 02:18:28.880" endtime="20220422 02:18:28.959"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='languages_available']</arg>
+<arg>hindi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220422 02:18:28.960" level="INFO">Typing text 'hindi' into text field '//input[@name='languages_available']'.</msg>
+<status status="PASS" starttime="20220422 02:18:28.960" endtime="20220422 02:18:29.044"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='genre']</arg>
+<arg>comedy,Drama</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220422 02:18:29.045" level="INFO">Typing text 'comedy,Drama' into text field '//input[@name='genre']'.</msg>
+<status status="PASS" starttime="20220422 02:18:29.044" endtime="20220422 02:18:29.126"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='ticket_cost']</arg>
+<arg>250</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220422 02:18:29.127" level="INFO">Typing text '250' into text field '//input[@name='ticket_cost']'.</msg>
+<status status="PASS" starttime="20220422 02:18:29.126" endtime="20220422 02:18:29.204"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='trailer']</arg>
+<arg>https://www.youtube.com/watch?v=WiMIxwX4MjI</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220422 02:18:29.205" level="INFO">Typing text 'https://www.youtube.com/watch?v=WiMIxwX4MjI' into text field '//input[@name='trailer']'.</msg>
+<status status="PASS" starttime="20220422 02:18:29.204" endtime="20220422 02:18:29.310"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Add movie']</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220422 02:18:29.310" level="INFO">Sending key(s) ('[Return]',) to //button[normalize-space()='Add movie'] element.</msg>
+<msg timestamp="20220422 02:18:31.901" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20220422 02:18:29.310" endtime="20220422 02:18:31.941"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220422 02:18:31.941" endtime="20220422 02:18:35.148"/>
+</kw>
+<status status="PASS" starttime="20220422 02:18:15.917" endtime="20220422 02:18:35.149"/>
+</test>
+<status status="PASS" starttime="20220422 02:18:15.672" endtime="20220422 02:18:35.151"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="viewMovieAdmin">viewMovieAdmin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

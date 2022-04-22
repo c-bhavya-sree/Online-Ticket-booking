@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220422 00:12:36.577" rpa="false" schemaversion="3">
+<suite id="s1" name="googleSearch" source="C:\Users\VSCC PRASAD\PycharmProjects\RobotFramework\Test\MovieAdda\googleSearch.robot">
+<test id="s1-t1" name="this is a sample test case" line="6">
+<status status="FAIL" starttime="20220422 00:12:37.040" endtime="20220422 00:12:37.043">Test contains no keywords.</status>
+</test>
+<test id="s1-t2" name="Open Browser" line="8">
+<kw name="https://www.google.com/">
+<arg>chrome</arg>
+<msg timestamp="20220422 00:12:37.057" level="FAIL">No keyword with name 'https://www.google.com/' found.</msg>
+<status status="FAIL" starttime="20220422 00:12:37.057" endtime="20220422 00:12:37.057"/>
+</kw>
+<status status="FAIL" starttime="20220422 00:12:37.047" endtime="20220422 00:12:37.060">No keyword with name 'https://www.google.com/' found.</status>
+</test>
+<test id="s1-t3" name="Close Browser" line="10">
+<status status="FAIL" starttime="20220422 00:12:37.065" endtime="20220422 00:12:37.066">Test contains no keywords.</status>
+</test>
+<status status="FAIL" starttime="20220422 00:12:36.580" endtime="20220422 00:12:37.069"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="googleSearch">googleSearch</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

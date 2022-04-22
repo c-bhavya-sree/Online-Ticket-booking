@@ -1,0 +1,54 @@
+* Settings *
+Library  SeleniumLibrary
+
+* Test Cases *
+
+Test Case homepage
+    Open Browser  http://127.0.0.1:5000/undefined  chrome
+    Maximize Browser Window
+    Sleep  02
+    Close Browser
+
+
+Test Case admin_login
+    Open Browser  http://127.0.0.1:5000/admin_login?admin_sign_in=  chrome
+    Maximize Browser Window
+    Input text  //input[@name='user_name']  admin
+    Input password  //input[@name='user_password']  12345
+    Press keys  //button[normalize-space()='Sign in']  [Return]
+    Sleep  02
+    Close Browser
+
+
+Test Case view_theater
+    Open Browser  http://127.0.0.1:5000/go_back?  chrome
+    Maximize Browser Window
+    Press keys  //button[normalize-space()='View Theater']  [Return]
+    Sleep  02
+    Close Browser
+
+
+Test Case view_booking
+    Open Browser  http://127.0.0.1:5000/go_back?  chrome
+    Maximize Browser Window
+    Press keys  //button[normalize-space()='View Total Collection']  [Return]
+    Sleep  02
+    Close Browser
+
+
+Test Case user_signin
+    Open Browser  http://127.0.0.1:5000/user_login?user_sign_in=  chrome
+    Maximize Browser Window
+    Input text  //input[@name='user_email']  ravi@gmail.com
+    Input password  //input[@name='user_password']  123
+    Press keys  //button[normalize-space()='Sign in']  [Return]
+    Sleep  02
+    Close Browser
+
+
+
+
+* Variables *
+
+
+* Keywords *
